@@ -41,6 +41,7 @@ export default function App() {
         item.ptg = newptg;
       }
     })
+    seteditValidate(false);
     setshowModal(false);
     console.log("Editando..");
   }
