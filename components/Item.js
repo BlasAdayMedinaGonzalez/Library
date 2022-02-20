@@ -1,24 +1,25 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-const Item = () => {
+const Item = ({itemData, onDelete, onEdit}) => {
+  const {title, page, ptg} = itemData;
   return (
     <View style={styles.item}>
       <View styles={styles.itemText}>
         <Text>Imagen</Text>
       </View>
       <View style={styles.textInfo}>
-        <Text styles={styles.itemText}>Hola</Text>
-        <Text styles={styles.itemText}>Hola</Text>
-        <Text styles={styles.itemText}>Hola</Text>
+        <Text styles={styles.itemText}>Título: {title}</Text>
+        <Text styles={styles.itemText}>Número de Página: {page}</Text>
+        <Text styles={styles.itemText}>Porcentaje leído: {ptg}</Text>
       </View>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={onEdit} >
             <View style={styles.edit}>
                 <Text style={styles.itemText}>Edit</Text>
             </View>
         </TouchableOpacity>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={onDelete} >
             <View style={styles.delete}>
                 <Text style={styles.itemText}>Delete</Text>
             </View>
