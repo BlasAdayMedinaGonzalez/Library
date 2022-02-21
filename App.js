@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, FlatList , StyleSheet, Text, View} from 'react-native';
+import { Button, FlatList , StyleSheet, View} from 'react-native';
 import Header from './components/Header';
 import Item from "./components/Item";
 import InputBook from "./components/InputBook";
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     width: "100%",
-    padding: 20
+    padding: 20,
   },
 
 });

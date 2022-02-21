@@ -3,6 +3,6 @@ export default {
     white: "#fff",
     pink: "#ef0078",
     lightpink: "#F06292",
-    green: "#00E676"
+    pinkbright: "#F48FB1"
 
 }

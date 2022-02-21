@@ -1,13 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import Colors from "../constrains/Colors";
 
 const Item = ({itemData, onDelete, onEdit}) => {
   const {title, page, ptg} = itemData;
   return (
     <View style={styles.item}>
-      <View styles={styles.itemText}>
-        <Text>Imagen</Text>
-      </View>
       <View style={styles.textInfo}>
         <Text styles={styles.itemText}>Título: {title}</Text>
         <Text styles={styles.itemText}>Número de Página: {page}</Text>
@@ -32,8 +30,8 @@ const Item = ({itemData, onDelete, onEdit}) => {
 const styles = StyleSheet.create({
   item: {
     flexDirection: "row",
-    justifyContent: "space-between",
-    backgroundColor: "#F48FB1",
+    justifyContent: "space-around",
+    backgroundColor: Colors.pinkbright,
     width: "100%",
     height: 110,
     borderWidth: 1,

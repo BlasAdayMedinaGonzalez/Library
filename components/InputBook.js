@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
     width: "75%",
     borderBottomColor: "red",
     borderBottomWidth: 1,
+    color: "white",
     height: 40,
   },
   bookButton: {
